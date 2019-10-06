@@ -249,7 +249,7 @@ plt.xlabel('Latitude')
 # Display the plot
 plt.show()
 
-# Change the marker shape to square and co
+# Change the marker shape to square and col
 plt.scatter(cellphone.x, cellphone.y,
            color='red',
            marker='s')
