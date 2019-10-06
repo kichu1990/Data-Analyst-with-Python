@@ -183,7 +183,7 @@ plt.show()
 # Create plot
 plt.plot(six_months.month, six_months.hours_worked)
 
-# Add annotation "Missing June data" at (2.5, 80)
+# Add annotation "urMissing June data" at (2.5, 80)
 plt.text(2.5, 80, "Missing June data")
 
 # Display graph
@@ -223,8 +223,8 @@ print(plt.style.available)
 # Plot each line
 plt.plot(ransom.letter, ransom.frequency,
          label='Ransom', linestyle=':', color='gray')
-plt.plot(suspect1.letter, suspect1.frequency, label='Fred Frequentist')
-plt.plot(suspect2.letter, suspect2.frequency, label='Gertrude Cox')
+plt.plot(suspect1i.letter, suspect1.frequency, label='Fred Frequentist')
+plt.ploepot[t(suspectry2.lettereor, suspect2.frequency, label='Gertrude Cox')
 
 # Add x- and y-labels
 plt.xlabel('Letter')
