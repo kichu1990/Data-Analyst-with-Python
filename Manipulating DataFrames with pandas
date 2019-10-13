@@ -141,3 +141,17 @@ NY_month1 = sales.loc[('NY', 1), :]
 CA_TX_month2 = sales.loc[(['CA', 'TX'], 2), :]
 # Look up data for all states in month 2: all_month2
 all_month2 = sales.loc[(slice(None), 2), :]
+
+# Pivot the users DataFrame: visitors_pivot
+visitors_pivot = users.pivot(index = 'weekday',columns = 'city',values = 'visitors')
+# Print the pivoted DataFrame
+print(visitors_pivot)
+
+# Pivot users with signups indexed by weekday and city: signups_pivot
+signups_pivot = users.pivot(index='weekday', columns='city', values='signups')
+# Print signups_pivot
+print(signups_pivot)
+# Pivot users pivoted by both signups and visitors: pivot
+pivot = users.pivot(index='weekday', columns='city')
+# Print the pivoted DataFrame
+print(pivot)
