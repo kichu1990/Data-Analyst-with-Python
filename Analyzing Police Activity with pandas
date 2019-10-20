@@ -74,3 +74,7 @@ print(ri[ri.driver_gender == 'F'].search_conducted.mean())
 print(ri[ri.driver_gender == 'M'].search_conducted.mean())
 # Calculate the search rate for both groups simultaneously
 print(ri.groupby(ri.driver_gender).search_conducted.mean())
+# Calculate the search rate for each combination of gender and violation
+print(ri.groupby(['driver_gender', 'violation']).search_conducted.mean())
+# Reverse the ordering to group by violation before gender
+print(ri.groupby(['violation' , 'driver_gender']).search_conducted.mean())
